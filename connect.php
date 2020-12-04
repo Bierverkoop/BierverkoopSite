@@ -5,11 +5,11 @@ $conn = mysqli_connect("localhost", "root", "","bier");
 
 if ($conn)
 {
-    echo "su6";
+    //echo "su6";
 }
 else
 {
-    echo "Opnieuw";
+    //echo "Opnieuw";
 }
 
 

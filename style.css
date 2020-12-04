@@ -1,10 +1,14 @@
 .forn-group {
-  color: black;
+  color: silver;
 }
 
 #henk {
-  color: black;
-  margin-left: 750px;
+  color: silver;
+  margin-left: 725px;
+}
+
+.textc {
+  color: green;
 }
 
 body {
@@ -19,10 +23,11 @@ body {
 #form {
   border-radius: 40px;
   position: middle;
-  background-color: #839788;
+  background-color: #3e3e3e;
   margin-top: 0px;
-  width: 80%;
+  width: 75%;
   margin-left: 190px;
+  padding: 30px;
 }
 
 #headerimg {
@@ -32,25 +37,26 @@ body {
 
 input[type="text"],
 input[type="password"] {
-  width: 80%;
+  width: 70%;
   padding: 12px 20px;
   border-radius: 40px;
   margin: 8px 0;
+  margin-left: 120px;
   display: inline-block;
-  border: 1px solid #ccc;
+  border: 1px solid silver;
   box-sizing: border-box;
-  background-color: #baa898;
+  background-color: silver;
   border-radius: 40px;
   color: white;
 }
 
 button {
-  background-color: #baa898;
+  background-color: silver;
   border-radius: 40px;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
-  margin-left: 715px;
+  margin-left: 690px;
   border: none;
   cursor: pointer;
   width: 10%;

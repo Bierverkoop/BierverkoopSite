@@ -1,3 +1,14 @@
+<?php
+session_start();
+//print_r($_SESSION);
+
+
+ if($SESSION['Rol'] == (Reseller));
+ {
+   header('Location: index.php');
+ }
+ ?>
+
 <!DOCTYPE html>
 <html lang="nl">
 <head>
@@ -13,8 +24,7 @@
         <div class= "row">
             <div class= "com-md-6">
                 <div class="jumbotron">
-                    <h2 id= text>
-                        Welcome Reseller
+                        Welcome <?php echo $_SESSION['Username'];?>
 </h2>
 
     <script type= "text/javascript" src="js.jquery.min.js"></script>

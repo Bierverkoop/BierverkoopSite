@@ -1,17 +1,44 @@
 <?php
+session_start();
 
-if (isset($_POST["btnLogin"]))
+
+require_once 'connect.php';
+
+$message = "Invalid Username or Password";
+
+if (isset($_POST))
 {
     $username = htmlspecialchars($_POST["Username"]);
     $password = htmlspecialchars($_POST["Password"]);
 
-    echo $username;
-
+    $query = "SELECT * FROM tblUser WHERE Username= '$username' AND Passwor= '$password'"; 
+    $result = mysqli_query($conn, $query); 
+    if (mysqli_num_rows($result) > 0) 
+   {
+        while($row= mysqli_fetch_assoc($result))
+        {
+            if($row["Rol"] == "Admin")
+            {
+           
+                 $_SESSION= $row;
+                header('Location: admin.php');
+            }
+            else 
+            {
+                
+                $_SESSION= $row;
+                header('Location: reseller.php');
+            }
+            
+        }
+   }
+        else
+        {
+            
+            header('Location: index.php');
+        }
 }
-else
-{
-    echo "paard";
-}
 
 
+   
 ?>
