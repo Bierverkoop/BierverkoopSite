@@ -2,13 +2,27 @@
   color: silver;
 }
 
+#textc {
+  margin-left: 675px;
+}
+
 #henk {
   color: silver;
   margin-left: 725px;
 }
 
-.textc {
-  color: green;
+.reseller-imgae {
+  border: 1px solid;
+  margin: auto 5px;
+  display: inline-block;
+}
+
+#form2 {
+  width: 500px;
+}
+
+#imgae1 {
+  border-radius: 30px;
 }
 
 body {
@@ -41,7 +55,7 @@ input[type="password"] {
   padding: 12px 20px;
   border-radius: 40px;
   margin: 8px 0;
-  margin-left: 120px;
+  margin-left: 110px;
   display: inline-block;
   border: 1px solid silver;
   box-sizing: border-box;
@@ -57,6 +71,31 @@ button {
   padding: 14px 20px;
   margin: 8px 0;
   margin-left: 690px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+}
+
+#button1 {
+  background-color: silver;
+  border-radius: 40px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 200px;
+  border: none;
+  cursor: pointer;
+  width: 10%;
+  margin-top: 40px;
+}
+
+#button2 {
+  background-color: silver;
+  border-radius: 40px;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  margin-left: 680px;
   border: none;
   cursor: pointer;
   width: 10%;

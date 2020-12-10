@@ -3,9 +3,10 @@ session_start();
 //print_r($_SESSION);
 
 
- if($SESSION['Rol'] == (Admin));
+ if($_SESSION['Rol'] == "Admin");
  {
-   header('Location: index.php');
+        //print_r($_SESSION);
+   //header('Location: index.php');
  }
  ?>
 

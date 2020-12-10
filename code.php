@@ -8,6 +8,7 @@ $message = "Invalid Username or Password";
 
 if (isset($_POST))
 {
+    //echo 'koe';
     $username = htmlspecialchars($_POST["Username"]);
     $password = htmlspecialchars($_POST["Password"]);
 
@@ -19,24 +20,20 @@ if (isset($_POST))
         {
             if($row["Rol"] == "Admin")
             {
-           
                  $_SESSION= $row;
                 header('Location: admin.php');
             }
-            else 
-            {
-                
+            else             {
+                //echo 'kip';
                 $_SESSION= $row;
                 header('Location: reseller.php');
             }
             
         }
-   }
-        else
-        {
+   }else{
             
-            header('Location: index.php');
-        }
+       // header('Location: index.php');
+    }
 }
 
 

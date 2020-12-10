@@ -3,9 +3,10 @@ session_start();
 //print_r($_SESSION);
 
 
- if($SESSION['Rol'] == (Reseller));
+ if($_SESSION['Rol'] == "Reseller");
  {
-   header('Location: index.php');
+        //print_r($_SESSION);
+   //header('Location: index.php');
  }
  ?>
 
