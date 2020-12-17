@@ -5,7 +5,7 @@
 <html lang="nl">
 <head>
     <title>Scrumgroep 3</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style_beginpagina.css">
     <img 
         id="headerimg"
         src="image.png">
@@ -16,7 +16,7 @@
 
 <body>
 
-<input type="button"  id="button2" value="Particulier" onclick="location='bestel.php'" />
+<input type="button"  id="button2" value="Particulier" onclick="location='AbeBierPagina.html'" />
 <input type="button"  id="button1" value="Reseller/Admin" onclick="location='index.php'" />
 
 

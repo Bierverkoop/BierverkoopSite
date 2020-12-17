@@ -1,33 +1,31 @@
+<?php include('server.php'); ?>
 
 <!DOCTYPE html>
-<html lang="nl">
-<head>
-    <title>Scrumgroep 3</title>
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <img 
-        id="headerimg"
-        src="image.png">
-</head>
-<body>
-    <div class="contain row">
-    <div class="com-md-6">
-        <form id="form" action="code.php" method="POST">
-        <h2 id="henk">Login<h2>
-        <div class="forn-group">
-            <label>Username</label>
-            <input type="text" name="Username" class="form-control" placeholder="Enter Username">
-    </div> 
-          <div class="forn-group">
-            <label>Password</label>
-            <input type="text" name="Password" class="form-control" placeholder="Enter Password">
-    </div>
-        
-    <button type="submit">Inloggen</button>
-
-    <script type="text/javascript" src="js.jquery.min.js"></script>
-    <script type="text/javascript" src="js.bootstrap.min.js"></script>
-    <script type="text/javascript" src="js.popper.min.js"></script>
-
-</body>
+<html>
+    <head>
+        <title>login</title>
+        <meta http-equiv="Content-type"
+        content="text/html"
+        charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/2e1bcef615.js" crossorigin="anonymous"></script>
+    </head>
+    <body class="index">
+        <div class="container">
+            <h2>INLOGGEN</h2>
+            <?php include('error.php'); ?>
+            <form action="index.php" method="POST">
+                <div class="textbox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="text" placeholder="E-mail adres" name="email">
+                 </div>
+                 <div class="textbox">
+                    <i class="fas fa-key"></i>
+                    <input type="password" placeholder="wachtwoord" name="password">
+                 </div>
+                <button type="submit" name="login" class="button">LOGIN</button>
+            </form>
+        </div>
+    </body>
 </html>

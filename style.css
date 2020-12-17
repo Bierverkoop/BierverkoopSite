@@ -1,130 +1,443 @@
-.forn-group {
-  color: silver;
-}
+/*login*/
 
-#textc {
-  margin-left: 675px;
-}
-
-#henk {
-  color: silver;
-  margin-left: 725px;
-}
-
-.reseller-imgae {
-  border: 1px solid;
-  margin: auto 5px;
-  display: inline-block;
-}
-
-#form2 {
-  width: 500px;
-}
-
-#imgae1 {
-  border-radius: 30px;
-}
-
-body {
-  background-color: #eee0cb;
-}
-
-#headerimg {
-  height: 300px;
-  margin-left: 800px;
-}
-
-#form {
-  border-radius: 40px;
-  position: middle;
-  background-color: #3e3e3e;
-  margin-top: 0px;
-  width: 75%;
-  margin-left: 190px;
-  padding: 30px;
-}
-
-#headerimg {
-  height: 300px;
-  margin-left: 820px;
-}
-
-input[type="text"],
-input[type="password"] {
-  width: 70%;
-  padding: 12px 20px;
-  border-radius: 40px;
-  margin: 8px 0;
-  margin-left: 110px;
-  display: inline-block;
-  border: 1px solid silver;
-  box-sizing: border-box;
-  background-color: silver;
-  border-radius: 40px;
-  color: white;
-}
-
-button {
-  background-color: silver;
-  border-radius: 40px;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  margin-left: 690px;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-}
-
-#button1 {
-  background-color: silver;
-  border-radius: 40px;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  margin-left: 200px;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-  margin-top: 40px;
-}
-
-#button2 {
-  background-color: silver;
-  border-radius: 40px;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  margin-left: 680px;
-  border: none;
-  cursor: pointer;
-  width: 10%;
-}
-
-button:hover {
-  opacity: 0.5;
-}
-
-.cancelbtn {
-  width: auto;
-  padding: 10px 18px;
-  background-color: #f44336;
+.index {
+    width: 100%;
+    height: 1080px;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background: url(background.png) no-repeat;
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
+    background-attachment: fixed;
 }
 
 .container {
-  padding: 16px;
+    width: 500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #eee0cb;
+    background-color: #3e3e3e;
+    border: 4px solid #3e3e3e;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
-span.psw {
-  float: right;
-  padding-top: 16px;
+.container h2 {
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
-@media screen and (max-width: 300px) {
-  span.psw {
-    display: block;
-    float: none;
-  }
-  .cancelbtn {
+
+.textbox {
     width: 100%;
-  }
+    overflow: hidden;
+    font-size: 25px;
+    padding: 8px 0;
+    margin: 8px 0;
+}
+
+.textbox i {
+    width: 26px;
+    float: left;
+    text-align: center;
+    margin: 10px 0 0 5px;
+}
+
+.textbox input {
+    border: none;
+    outline: none;
+    background: none;
+    color: white;
+    font-size: 25px;
+    width: 80%;
+    float: left;
+    margin: 5px;
+    border-bottom: 3px solid;
+}
+
+.button {
+    width: 50%;
+    background: none;
+    border: 3px solid white;
+    color: white;
+    font-size: 18px;
+    margin: 0 25% 20px 25%;
+    outline: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background-color: #000000;
+    outline: none;
+}
+
+.error {
+    width: 100%;
+    border-bottom: 4px solid #000000;
+    border-top: 4px solid #000000;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    text-align: center;
+    font-size: 18px;
+}
+.error p {
+    display: block;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+}
+
+/*login end*/
+
+/*header start*/
+
+.body {
+    background-color: #eee0cb;
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+header {
+    height: 50px;
+    width: 121%;
+    background-color: #000;
+    color: white;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+header .user, header .logout {
+    width: fit-content;
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    float: right;
+    background-color: black;
+    text-align: right ;
+    font-size: 30px;
+    border-radius: 20px 0 0 20px;
+}
+
+.logout {
+    float: left !important;
+    text-align: left !important;
+    border-radius: 0 20px 20px 0 !important;
+}
+
+.logout p {
+    padding: 5px 30px 5px 10px !important;
+}
+
+header .user p, header .logout p {
+    padding: 7px 10px 5px 30px;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+header .logout a {
+    width: fit-content;
+    background: none;
+    border: 2px solid white;
+    color: white;
+    outline: none;
+    padding: 0px 5px 0 5px;
+    margin: 0 5%;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    padding-top: 2px;
+}
+
+header .logout a:hover {
+    background-color: #eee0cb;
+    color: #000080;
+}
+
+/*header end*/
+
+/*content home.php*/
+
+.content {
+    width: 100%;
+    height: fit-content;
+    background: transparent;
+    border-bottom: 4px solid black;
+    margin: 0;
+    padding: 0;
+}
+.order {
+    width: 90%;
+    height: fit-content;
+    padding: 0;
+    margin: 20px 5% 20px 5%;
+    border: 3px solid #545454;
+    background: #d0d0d0;
+}
+
+.order p {
+    margin: 5px 10px 5px 10px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.order form button {
+    width: 20%;
+    background: none;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    color: #000000;
+    font-size: 18px;
+    margin: 0 0 20px 5px;
+    outline: none;
+}
+
+.order form button:hover {
+    cursor: pointer;
+    background-color: #0000ff;
+    outline: none;
+    color: white;
+}
+
+.amount {
+    width: 20% !important;
+    border: 3px solid  #545454 !important;
+    padding: 0 !important;
+    color: black !important;
+    margin: 8px 5px !important;
+    border-radius: 15px !important;
+}
+.amount input {
+    color: black !important;
+    border: unset !important;
+}
+
+.order_error {
+    width: 20%;
+    border: 4px solid #0000ff;
+    padding: 0;
+    margin: 7px;
+    background-color: #000080;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.order_error p {
+    display: block;
+    margin-block-start: 5px;
+    margin-block-end: 5px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: white;
+}
+.accepted {
+    width: 100%;
+    height: fit-content;
+    margin-right: 44;
+    padding: 0;
+    /*! border-bottom: 5px solid #000; */
+    margin-left: 21%;
+    border-style: none;
+    background: #545454;
+    border-color: black;
+    color: aliceblue;
+}
+
+/*home.php end*/
+
+/*home-admin.php start*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+html {
+    padding: 0;
+    margin: 0;
+}
+
+.add_user {
+    width: 95%;
+    height: fit-content;
+    padding: 0;
+    overflow: hidden;
+    margin-left: 22%;
+}
+
+.add_user .textbox input {
+    color: black !important;
+    border-bottom: 2px solid black !important;
+}
+.add_user button {
+    width: 10% ;
+    color: black ;
+    border: 3px solid black ;
+    margin: 10px 0 10px 20px ;
+    background: #a0a0a0;
+    height: 60%;
+}
+.add_user button:hover {
+    border: 3px solid #0000ff;
+    color: white;
+}
+.add_user .textbox {
+    margin: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+    margin: 0 0 0 20px !important;
+}
+.add_user form {
+    display: grid;
+    grid-row-gap: 10px;
+    margin-top: 20px;
+}
+.pending, .accepted .users, .all_users{
+    width: 100%;
+    height: fit-content;
+    margin-right: 44;
+    padding: 0;
+    /*! border-bottom: 5px solid #000; */
+    margin-left: 21%;
+    border-style: none;
+    background: #545454;
+    border-color: black;
+    color: aliceblue;
+}
+.user_grid {
+    display: grid !important;
+    grid-row-gap: 10px;
+}
+.pending .reseller, .accepted .reseller, .all_users .reseller {
+    display: unset;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+    margin: 0;
+}
+.info {
+    width: 70%;
+    height: 150px;
+    background: none;
+    border: 3px solid rgb(238, 224, 203);
+    margin: 10px 0%;
+    padding: 0;
+    background: #545454;
+    width: 70%;
+}
+
+.info .reseller {
+    display: unset;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding-left: 4px;
+    margin: 0;
+    border-bottom: 2px solid rgb(255, 255, 255);
+}
+.info .display_info {
+    display: unset;
+    font-family: sans-serif;
+    font-size: 20px;
+    margin: 5px;
+}
+
+.info .details {
+    width: 70%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    float: left;
+}
+
+.info .action {
+    width: 30%;
+    height: 150px;
+    margin: 0;
+    padding: 0;
+    background: none;
+    float: right;
+}
+
+.action a {
+    text-decoration: none;
+    outline: none;
+    float: right;
+    width: 60%;
+    height: fit-content;
+    font-family: sans-serif;
+    font-size: 18px;
+    text-align: center;
+    margin: 5px;
+}
+.action .A {
+    color: rgb(255, 255, 255);
+    border: 3px solid green;
+    background: green
+}
+.action .W {
+    color: rgb(255, 255, 255);
+    border: 3px solid red;
+    background: red
+}
+.action .A:hover {
+    color: white;
+    border: 3px solid green;
+    background-color: green;
+}
+.action .W:hover {
+    color: white;
+    border: 3px solid red;
+    background-color: red;
+}
+
+.accepted .info {
+    height: 200px !important;
+}
+
+.status {
+    font-size: 25px !important;
+    color: #0e9012 !important;
+}
+.add-user {
+    display: unset;
+    font-family: sans-serif;
+    font-size: 18px;
+    /* padding-left: 10px; */
+    margin: 0;
+    -webkit-border-image: round;
+    border: 0px solid white;
+    margin-left: 1%;
+    background: green;
+    color: white;
+}
+
+a {
+    color: white;
+}
+.pending-t {
+    width: 100%;
+    height: fit-content;
+    margin-right: 44;
+    padding: 0;
+    /*! border-bottom: 5px solid #000; */
+    /* margin-left: 21%; */
+    border-style: none;
+    background: #545454;
+    border-color: black;
+    color: aliceblue;
+}
+p.reseller-t {
+    display: unset;
+    font-family: sans-serif;
+    font-size: 25px;
+    padding-left: 10px;
+    margin:0;
 }
